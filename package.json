@@ -1,0 +1,13 @@
+{
+  "name": "discord-link-viewer",
+  "version": "1.0.0",
+  "description": "Instantly display the contents of the message link.",
+  "main": "index.js",
+  "repository": "https://github.com/InkoHX/discord-link-viewer.git",
+  "author": "InkoHX <inkohx@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}
