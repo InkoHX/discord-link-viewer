@@ -19,7 +19,10 @@ function exec (message) {
     client.channels.fetch(group.channelId)
       .then(channel => channel.messages.fetch(group.messageId))
       .then(targetMessage => message.channel.send(targetMessage.cleanContent, [ ...targetMessage.attachments.values(), ...targetMessage.embeds ]))
-      .catch(console.error)
+      .catch(error => message.reply(error)
+        .then(message => message.delete({ timeout: 10000 }))
+        .catch(console.error)
+      )
   }
 }
 
