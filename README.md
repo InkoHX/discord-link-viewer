@@ -2,7 +2,9 @@
 
 ![discord-link-viewer](https://i.imgur.com/1boVHDW.png)
 
-Instantly display the contents of the message link.
+## What is this
+
+A Discord bot that instantly displays the content of the message link sent by the user.
 
 ## Set up
 
