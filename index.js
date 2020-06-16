@@ -6,10 +6,6 @@ const client = new Discord.Client({
 client.once('ready', () => console.log('READY'))
 
 client.on('message', message => {
-  return exec(message)
-})
-
-function exec (message) {
   const URL_PATTERN = /http(?:s)?:\/\/(?:.*)?discord(?:app)?\.com\/channels\/(?:\d{17,19})\/(?<channelId>\d{17,19})\/(?<messageId>\d{17,19})/g
   let result
 
@@ -24,7 +20,7 @@ function exec (message) {
         .catch(console.error)
       )
   }
-}
+})
 
 client.login()
   .catch(console.error)
