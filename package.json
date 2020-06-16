@@ -7,6 +7,9 @@
   "author": "InkoHX <inkohx@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "node ./index.js"
+  },
   "dependencies": {
     "discord.js": "^12.2.0"
   }
